@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-const cli = require('../cli');
+import greeting from '../cli.js';
 
-cli.greeting();
+greeting();
