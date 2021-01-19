@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Make lint
+name: make-lint
 
 # Controls when the action will run. 
 on:
@@ -26,5 +26,8 @@ jobs:
       - uses: actions/setup-node@v2.1.4
 
       # Runs a single command using the runners shell
+      - name: Install Dependencies
+        run: npm install
+
       - name: Makefile run lint
         run: make lint
