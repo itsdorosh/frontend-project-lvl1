@@ -28,4 +28,5 @@ jobs:
       - name: Makefile run lint
         run: |
           cd $GITHUB_WORKSPACE
+          npm ci
           make lint
