@@ -10,3 +10,5 @@ indent_size = 2
 indent_style = space
 insert_final_newline = true
 max_line_length = 120
+ij_javascript_spaces_within_imports = true
+ij_javascript_use_double_quotes = false
