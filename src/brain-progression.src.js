@@ -1,7 +1,7 @@
 import { getRandomInt, getRandomProgression, playGame } from './shared.js';
 
 export default function brainProgressionGame() {
-  const taskDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const taskDescription = 'What number is missing in the progression?';
 
   const gameIterationCallback = () => {
     const progression = getRandomProgression();
