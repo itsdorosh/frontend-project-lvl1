@@ -8,3 +8,6 @@
 
 # brain-gcd
 [![asciicast](https://asciinema.org/a/M2f84go7mcHvCf9e9h01UKFnW.svg)](https://asciinema.org/a/M2f84go7mcHvCf9e9h01UKFnW)
+
+# brain-prime
+[![asciicast](https://asciinema.org/a/ammpRSZMSKZsXN57GLFQ4Nfnw.svg)](https://asciinema.org/a/ammpRSZMSKZsXN57GLFQ4Nfnw)
