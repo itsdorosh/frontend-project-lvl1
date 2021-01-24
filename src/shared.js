@@ -2,13 +2,25 @@ import greeting, { askUser } from '../cli.js';
 
 const COUNT_OF_ROUNDS = 3;
 
-export function isEven(value) {
-  return value % 2 === 0;
+export const YES_OR_NO_ANSWERS_MAP = {
+  [true]: 'yes',
+  [false]: 'no',
+};
+
+export function isEven(number) {
+  return number % 2 === 0;
+}
+
+export function isPrime(number) {
+  for (let i = 2; i < number; i + 1) {
+    if (number % i === 0) return false;
+  }
+  return number > 1;
 }
 
 export function gcd(first, second) {
-  if (second > first) { return gcd(second, first); }
-  if (!second) { return first; }
+  if (second > first) return gcd(second, first);
+  if (!second) return first;
   return gcd(second, first % second);
 }
 
