@@ -40,6 +40,20 @@ export function getRandomProgression() {
   return result;
 }
 
+export function processNumbers(left, right) {
+  const operators = '+-*/';
+  const operatorIndex = getRandomInt(3) - 1;
+  const randomSelectedOperator = operators[operatorIndex];
+
+  switch (randomSelectedOperator) {
+    case '+': return [left + right, randomSelectedOperator];
+    case '-': return [left - right, randomSelectedOperator];
+    case '*': return [left * right, randomSelectedOperator];
+    case '/': return [left / right, randomSelectedOperator];
+    default: return [left + right, randomSelectedOperator];
+  }
+}
+
 export function playGame(taskDescription = '', gameIterationCallback = () => null) {
   let round = 1;
 

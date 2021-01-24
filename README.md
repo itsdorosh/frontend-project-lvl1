@@ -14,3 +14,6 @@
 
 # brain-progression
 [![asciicast](https://asciinema.org/a/zdxkAG569lszYrB4sUY9Dtprd.svg)](https://asciinema.org/a/zdxkAG569lszYrB4sUY9Dtprd)
+
+# brain-calc
+[![asciicast](https://asciinema.org/a/ZR9j5ZmU35kICkCs6pZHN9NDV.svg)](https://asciinema.org/a/ZR9j5ZmU35kICkCs6pZHN9NDV)
