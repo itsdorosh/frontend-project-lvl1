@@ -21,12 +21,14 @@ export default function launchGame(taskDescription = '', gameIterationCallback =
 ${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.
 Let's try again, ${userName}!
         `);
-        process.exit(0);
+        return;
       }
 
       performGameIteration();
     }
   })());
 
-  console.log(`Congratulations, ${userName}!`);
+  if (round === COUNT_OF_ROUNDS) {
+    console.log(`Congratulations, ${userName}!`);
+  }
 }
