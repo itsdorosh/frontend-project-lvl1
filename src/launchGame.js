@@ -21,6 +21,7 @@ export default function launchGame(taskDescription = '', gameIterationCallback =
 ${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.
 Let's try again, ${userName}!
         `);
+        process.exit(0);
       }
 
       performGameIteration();
