@@ -28,7 +28,7 @@ Let's try again, ${userName}!
     }
   })());
 
-  if (round === COUNT_OF_ROUNDS) {
+  if (round > COUNT_OF_ROUNDS) {
     console.log(`Congratulations, ${userName}!`);
   }
 }
