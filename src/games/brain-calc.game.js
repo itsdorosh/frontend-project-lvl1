@@ -1,8 +1,5 @@
-import {
-  getRandomInt,
-  processNumbers,
-  playGame,
-} from './shared.js';
+import launchGame from '../launchGame.js';
+import { getRandomInt, processNumbers } from '../helpers.js';
 
 export default function brainCalcGame() {
   const taskDescription = 'What is the result of the expression?';
@@ -14,5 +11,5 @@ export default function brainCalcGame() {
     return [`${leftRandomNumber} ${operator} ${rightRandomNumber}`, correctAnswer];
   };
 
-  playGame(taskDescription, gameIterationCallback);
+  launchGame(taskDescription, gameIterationCallback);
 }

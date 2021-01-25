@@ -1,4 +1,5 @@
-import { getRandomInt, getRandomProgression, playGame } from './shared.js';
+import launchGame from '../launchGame.js';
+import { getRandomInt, getRandomProgression } from '../helpers.js';
 
 export default function brainProgressionGame() {
   const taskDescription = 'What number is missing in the progression?';
@@ -15,5 +16,5 @@ export default function brainProgressionGame() {
     ];
   };
 
-  playGame(taskDescription, gameIterationCallback);
+  launchGame(taskDescription, gameIterationCallback);
 }

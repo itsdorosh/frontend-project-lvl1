@@ -1,4 +1,5 @@
-import { gcd, getRandomInt, playGame } from './shared.js';
+import launchGame from '../launchGame.js';
+import { gcd, getRandomInt } from '../helpers.js';
 
 export default function brainGCDGame() {
   const taskDescription = 'Find the greatest common divisor of given numbers.';
@@ -11,5 +12,5 @@ export default function brainGCDGame() {
     return [[first, second].join(' '), correctAnswer];
   };
 
-  playGame(taskDescription, gameIterationCallback);
+  launchGame(taskDescription, gameIterationCallback);
 }
